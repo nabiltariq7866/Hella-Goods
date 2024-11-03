@@ -1,0 +1,874 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+
+/* nav styling is starting */
+#headerBorderWrap {
+  width: 100%;
+  background-color: rgba(255, 37, 36, 1);
+  height: auto;
+  position: relative;
+}
+.whitecolorbkg {
+  background-color: white !important;
+}
+.px-section {
+  padding: 0 45px;
+}
+.burger > i {
+  font-size: 34px;
+}
+.navcontainer {
+  width: 44%;
+}
+
+nav > a {
+  padding: 1vw;
+  display: inline-block;
+  font-size: 1.1vw;
+  color: black;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.navmenu {
+  justify-content: space-between;
+  padding: 15px;
+}
+.fa-chevron-down {
+  margin-left: 0.2vw;
+  font-size: 16px;
+}
+.headinglogo img {
+  width: 150px;
+}
+.theme-icon {
+  width: 28px;
+}
+.shop-info {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+.cardbutton {
+  background-color: transparent !important;
+  border: none;
+  cursor: pointer;
+}
+.font-main-search {
+  display: inline-block;
+  cursor: pointer;
+}
+.pointer-events-middle {
+  position: relative;
+}
+
+.itemnbrvcard {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+}
+
+.push-btn__surface {
+  background-color: #ffda22;
+  color: black;
+  font: 1.1em sans-serif;
+  font-weight: 900;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  border: 2px solid black;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.push-btn__surface:hover {
+  background-color: rgb(90, 255, 36);
+  transform: translate(-4px, -4px);
+}
+
+.relativebutoon {
+  z-index: 10;
+  position: relative;
+}
+.push-btn::after {
+  content: "";
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  border-radius: 9999px;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+
+.shopmenu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  border-top: 2px solid #cecece;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+.push-btn__surface1 {
+  background-color: rgb(90, 255, 3);
+  color: black;
+  font: 1.1em sans-serif;
+  font-weight: 900;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  border: 2px solid black;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.push-btn__surface1:hover {
+  background-color: rgb(90, 255, 36);
+  transform: translate(4px, 4px);
+}
+
+.relativebutoon1 {
+  z-index: 10;
+  position: relative;
+  margin-bottom: 24px;
+}
+.push-btn1::after {
+  content: "";
+  width: 100%;
+  transition: all 0.5s ease;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  border-radius: 9999px;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+
+.grid-menu {
+  gap: 2vw;
+  margin-top: 32px;
+}
+.imgdev {
+  width: 100%;
+  height: 203px;
+  border: 3px solid black;
+  border-radius: 0.375rem;
+}
+.showcase-tile {
+  width: 203px;
+}
+.imgshop {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mt-2-text-center {
+  text-align: center;
+  margin-top: 1vw;
+  text-transform: uppercase;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+/* section main styling is starting is here */
+#main {
+  width: 100%;
+  background-color: rgb(255, 37, 36);
+  min-height: 100vh;
+  position: relative;
+}
+.relative {
+  position: relative;
+}
+.items-center {
+  text-align: center;
+  z-index: 10;
+}
+.section-content {
+  position: relative;
+  z-index: 10;
+  padding: 40px 0;
+}
+.media--css-only {
+  text-align: center;
+  margin-top: -6vw;
+}
+.media {
+  position: relative;
+}
+.relative-px-section {
+  position: relative;
+  z-index: 10;
+  padding: 0 40px;
+}
+.w-full-mx-auto {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media__styled-element {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  border: 3px solid #111;
+}
+.media--css-only {
+  width: 75%;
+}
+.media--css-only:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.375rem;
+  display: block;
+  background-color: #111;
+  z-index: -1;
+}
+/* border wave styling is here */
+.wave {
+  --size: 13px;
+  --m: 1.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+  min-height: 100vh;
+  mask: radial-gradient(
+        var(--R) at 50% calc(100% - (var(--size) + var(--p))),
+        #000 99%,
+        #0000 101%
+      )
+      calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%)
+      50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+
+  border: none;
+}
+.redmirch {
+  position: absolute;
+  right: 7vw;
+  bottom: 3vw;
+  width: 15vw;
+}
+.green_1mirch {
+  position: absolute;
+  width: 15vw;
+  z-index: 10;
+  top: 150%;
+  left: 4vw;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffda22;
+}
+.shopify-section {
+  width: 100%;
+}
+.py-section-vertical-spacing {
+  padding: 64px 40px;
+}
+.font-heading {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: -0.04;
+  font-size: 6vw;
+  text-align: center;
+  line-height: 1;
+}
+.z-shape-divider {
+  flex-direction: column;
+  gap: 2vw;
+}
+.lowsaltmenu {
+  justify-content: space-between;
+}
+.rounded-full {
+  border: 3px solid black;
+  border-radius: 50%;
+}
+.theme-icon-salt {
+  width: 7vw;
+  height: 7vw;
+}
+.space-y-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-base {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.heading-standard {
+  text-align: center;
+  font-size: 47px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+.pointer-events-none {
+  width: 100%;
+  height: 100%;
+}
+.pointer-events-none img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.WildGarlicRub2 {
+  opacity: 0;
+}
+.object-wrapper:hover .WildGarlicRub2 {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.product-tile__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 2vw;
+}
+.font-body-text-base {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+.price-item {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 600;
+}
+
+.py-section-vertical-spacing-marginb {
+  margin-bottom: 0vw;
+}
+
+.text-centerp {
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.glider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glider > div {
+  min-width: 747px;
+  padding-top: 8vw;
+  margin-right: 40px;
+}
+.media--css-only2 {
+  width: 100% !important;
+  height: 100% !important;
+}
+.object-wrapper {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.object-wrapper img {
+  transition: all 0.5s ease;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.product-media-object {
+  width: 100%;
+}
+.blocktitle {
+  display: block;
+  text-align: center;
+}
+
+.buttondiv {
+  width: 70px;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+.glider-prev {
+  margin-right: 12vw;
+}
+.push-btn__surface2 {
+  padding: 0 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* border waves section styling is starting is here */
+
+.wave1 {
+  position: relative;
+  padding: 20px;
+  --size: 10px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+
+  mask: radial-gradient(
+        var(--R) at left 50% bottom calc(var(--size) + var(--p)),
+        #000 99%,
+        #0000 101%
+      )
+      left calc(50% - 2 * var(--size)) bottom 0 / calc(4 * var(--size)) 51%
+      repeat-x,
+    radial-gradient(
+        var(--R) at left 50% bottom calc(-1 * var(--p)),
+        #0000 99%,
+        #000 101%
+      )
+      left 50% bottom var(--size) / calc(4 * var(--size))
+      calc(51% - var(--size)) repeat-x,
+    radial-gradient(
+        var(--R) at left 50% top calc(var(--size) + var(--p)),
+        #000 99%,
+        #0000 101%
+      )
+      left calc(50% - 2 * var(--size)) top 0 / calc(4 * var(--size)) 51%
+      repeat-x,
+    radial-gradient(
+        var(--R) at left 50% top calc(-1 * var(--p)),
+        #0000 99%,
+        #000 101%
+      )
+      left 50% top var(--size) / calc(4 * var(--size)) calc(51% - var(--size))
+      repeat-x;
+  background: #5aff24;
+  border: none;
+}
+.mt {
+  margin-top: 40px;
+}
+.text-center {
+  text-align: center;
+}
+.tracking-rating {
+  font-size: 20px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  display: block;
+}
+
+.text-scale {
+  font-size: 58px;
+  margin-bottom: 2vw;
+}
+.heading-secondary {
+  font-size: 24px;
+}
+.push-btn__surface3 {
+  background-color: #fff;
+}
+.push-btn__surface3:hover {
+  background-color: #fff;
+}
+.buttonpostion {
+  right: 7% !important;
+  bottom: 12% !important;
+  display: flex;
+  gap: 1vw;
+}
+.card-gallery {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  max-width: 100%;
+}
+
+.card {
+  min-width: 100%;
+  margin: 0 10px;
+
+  opacity: 0.5; /* Partially visible cards */
+  transition: opacity 0.3s;
+}
+
+.card.active {
+  opacity: 1; /* Fully visible center card */
+}
+/* table content starting is here */
+.tablecontent {
+  width: 100%;
+  min-height: 100vh;
+}
+.text-center {
+  text-align: center;
+}
+.marginauto {
+  margin: auto;
+}
+.justify {
+  flex-direction: column;
+  gap: 3vw;
+  align-items: center;
+  justify-content: center;
+}
+.max-w-4xl {
+  max-width: 56rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table {
+  border-collapse: collapse;
+}
+.top-left-cell {
+  border: none !important;
+}
+th img {
+  width: 229px;
+  height: 90px;
+}
+th,
+td {
+  padding: 20px;
+  width: 271px;
+}
+.thheading {
+  font-weight: 900;
+}
+td:nth-child(2),
+th:nth-child(2) {
+  background-color: #5aff24;
+}
+th:nth-child(1) {
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+td > span {
+  display: block;
+  width: 37px;
+  height: 37px;
+}
+/* product section styling is  starting */
+.shopify-section {
+  width: 100%;
+}
+.section-content-top-margin {
+  margin-top: 1.25rem;
+}
+.heading {
+  padding-bottom: 12vw;
+}
+.leftcolumn {
+  width: 50%;
+}
+.col1 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 1vw;
+}
+.leftcolumn {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 2vw;
+}
+.col2 {
+}
+.push-btn__surfaceimg {
+  background-image: url(asset/01ChilliOil1.1.webp);
+  width: 91px;
+  height: 91px;
+  background-size: cover;
+}
+
+.push-btn__surfaceimg:hover {
+  transform: translate(0px, 0px);
+}
+
+.push-btn3::after {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+}
+.media--css-onlyimg {
+  width: 95%;
+}
+.WildGarlicRub3 {
+  opacity: 0;
+}
+.cursor {
+  cursor: pointer;
+}
+.rightcolumn {
+  width: 43%;
+  margin-left: 2vw;
+  margin-top: -vw;
+}
+.heading-feature {
+  font-size: 5vw;
+  text-align: left;
+  color: #000;
+  font-weight: 900;
+}
+.price-heading {
+  font-size: 2vw;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.product-para-info {
+  margin-top: 1.2rem;
+}
+.product-para-info > p {
+  font-family: sans-serif;
+  line-height: 1.4;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 500;
+}
+.width-button {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.color-White {
+  background-color: #fff;
+}
+.mt-0 {
+  margin-top: 1vw;
+}
+.hoverbackground:hover {
+  background-color: #5aff24;
+}
+.hoverbackgroundww:hover {
+  background-color: #fff;
+}
+.backgw {
+  background-color: #fff;
+  width: 100%;
+}
+.py-5 {
+  padding: 40px;
+}
+.card__surface {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.inline-heading-rte1 {
+  font-size: 4vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.colorblack {
+  color: #111 !important;
+  font-weight: 600;
+}
+.widthred {
+  width: 500px !important;
+}
+.minh {
+  min-height: 90vh !important;
+}
+/* Background video sectin styling is starting */
+.video-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 99;
+}
+
+#backgroundVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  min-height: 100vh;
+  object-fit: cover; /* Ensures video covers the full area */
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1; /* Ensures content appears over the video */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+/* dishes section styling starting */
+.bgc {
+  background-color: #ffcc37;
+  margin-top: -2vw;
+  min-height: 100vh !important;
+  width: 100%;
+}
+.section {
+  width: 100%;
+}
+.collift {
+  width: 40%;
+  height: 100vh;
+  padding-left: 2vw;
+}
+.colright {
+  width: 60%;
+  height: 100vh;
+  padding: 2vw 0;
+}
+.mt-5 {
+  margin-top: 3%;
+}
+.max-w-2xl > p {
+  font-size: 1.3vw;
+  font-family: sans-serif;
+}
+.backgimgsvg {
+  background-image: url(asset/01ChilliOil1.1.webp);
+}
+/* responsive website styling starting is here */
+@media screen and (min-width: 900px) {
+  .burger > i {
+    display: none;
+  }
+  .fa-xmark {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  nav > a > span {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    position: absolute;
+    top: 0%;
+    width: 0%;
+    height: 100vh;
+    background-color: #fff;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
+    overflow: hidden;
+  }
+  .text-scale {
+    font-size: 38px;
+    margin-bottom: 2vw;
+  }
+  .fa-chevron-down {
+    font-size: 3vw;
+  }
+  .fa-xmark {
+    font-size: 6vw;
+    margin-top: -2.5vw;
+    margin-left: 7vw;
+  }
+  nav > a {
+    display: block;
+    font-size: 3vw;
+    font-weight: 900;
+
+    margin-left: 10vw;
+  }
+  .shopmenu {
+    display: none;
+  }
+  #fa-solid {
+    display: none;
+  }
+  .green_1mirch {
+    top: 120%;
+    left: 4vw;
+  }
+}
